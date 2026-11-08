@@ -3,28 +3,188 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Umavi</title>
-<meta name="description" content="Umavi: diario personal para el tratamiento GLP-1. Privacidad, términos y contacto.">
+<title>Umavi: diario de tu tratamiento GLP-1</title>
+<meta name="description" content="Anota tus aplicaciones, rota el sitio, sigue tu peso y lleva todo ordenado a tu médico. Sin cuentas ni anuncios: tus datos se quedan en tu teléfono.">
+<meta name="theme-color" content="#0B0D10">
+<meta property="og:title" content="Umavi: diario de tu tratamiento GLP-1">
+<meta property="og:description" content="Anota tus aplicaciones, rota el sitio, sigue tu peso y lleva todo ordenado a tu médico. Sin cuentas ni anuncios: tus datos se quedan en tu teléfono.">
+<meta property="og:image" content="https://umavi.me/img/01-hoy.webp">
+<link rel="icon" href="icono.png">
 <link rel="stylesheet" href="estilo.css">
 </head>
-<body>
+<body class="portada-app">
+<a class="saltar" href="#contenido">Saltar al contenido</a>
 <header class="barra">
   <a class="marca" href="./" aria-label="Umavi, inicio">
     <svg viewBox="0 0 64 64" width="32" height="32" aria-hidden="true"><path d="M16 14v20a16 16 0 0 0 32 0v-6" fill="none" stroke="currentColor" stroke-width="9" stroke-linecap="round"/><circle cx="48" cy="12" r="5.5" fill="currentColor"/></svg>
     <span>Umavi</span>
   </a>
+  <nav class="nav" aria-label="Secciones">
+    <a href="#funciones">Funciones</a><a href="#privacidad">Privacidad</a><a href="#planes">Planes</a><a href="#preguntas">Preguntas</a>
+  </nav>
 </header>
-<main>
-<section class="portada">
-  <h1>Tu tratamiento GLP-1,<br>a tu ritmo.</h1>
-  <p class="bajada">Umavi es un diario personal para anotar tus aplicaciones, tu peso y cómo te sientes durante el
-  tratamiento que te indicó tu médico. Todo se guarda en tu teléfono: sin cuentas, sin anuncios y sin rastreo.</p>
-  <p class="nota">Umavi no es un dispositivo médico ni un servicio de salud, y no recomienda ni ajusta dosis.</p>
+<main id="contenido">
+<section class="hero">
+  <div class="hero-texto">
+    <p class="sello"><span class="punto" aria-hidden="true"></span>Diario personal para tu tratamiento GLP-1</p>
+    <h1>Tu tratamiento,<br><span class="lima">a tu ritmo.</span></h1>
+    <p class="bajada">Anota cada aplicación en segundos, rota el sitio sin pensarlo, sigue tu peso y cómo te
+    sientes, y llega a la consulta con todo ordenado. Sin cuentas y sin anuncios: todo se queda en tu teléfono.</p>
+    <div class="tiendas"><a class="tienda pronto" href="#descargar" aria-label="Muy pronto en Google Play"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4.2 2.6c-.3.3-.4.7-.4 1.2v16.4c0 .5.1.9.4 1.2l9.1-9.4-9.1-9.4zm10.3 10.6 2.6 2.7-11 6.3 8.4-9zm0-2.4L6.1 1.8l11 6.3-2.6 2.7zm3.9-1.9 3 1.7c.9.5.9 1.3 0 1.8l-3 1.7-2.8-2.6 2.8-2.6z"/></svg><span><small>Muy pronto en</small>Google Play</span></a><a class="tienda pronto" href="#descargar" aria-label="Muy pronto en App Store"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M16.4 12.6c0-2.4 2-3.6 2.1-3.7-1.1-1.7-2.9-1.9-3.5-1.9-1.5-.2-2.9.9-3.7.9-.8 0-1.9-.9-3.2-.8-1.6 0-3.1 1-4 2.4-1.7 3-.4 7.3 1.2 9.7.8 1.2 1.8 2.5 3 2.4 1.2 0 1.7-.8 3.2-.8s1.9.8 3.2.8c1.3 0 2.2-1.2 3-2.4.9-1.4 1.3-2.7 1.3-2.8-.1 0-2.6-1-2.6-3.8zM14 5.4c.7-.8 1.1-1.9 1-3-1 0-2.1.7-2.8 1.5-.6.7-1.2 1.8-1 2.9 1.1.1 2.1-.6 2.8-1.4z"/></svg><span><small>Muy pronto en</small>App Store</span></a></div>
+    <p class="aviso-hero">Para semaglutida, tirzepatida, liraglutida, dulaglutida y exenatida, en pluma o vial.</p>
+  </div>
+  <div class="hero-visual">
+    <div class="anillo" aria-hidden="true"></div>
+    <figure class="telefono principal"><img src="img/01-hoy.webp" width="540" height="1158" alt="Pantalla Hoy de Umavi: cuenta regresiva a la próxima aplicación, racha de 6 semanas y botón Registrar aplicación" fetchpriority="high" decoding="async"></figure>
+  </div>
 </section>
-<section class="tarjetas">
-  <a class="tarjeta" href="privacidad/"><span>Política de privacidad</span><small>Qué datos maneja la app y tus derechos</small></a>
-  <a class="tarjeta" href="terminos/"><span>Términos de uso</span><small>Las condiciones para usar Umavi y Premium</small></a>
-  <a class="tarjeta" href="mailto:soporte@umavi.me"><span>soporte@umavi.me</span><small>Ayuda y consultas</small></a>
+
+<ul class="franja" aria-label="Lo esencial de Umavi">
+  <li><strong>0</strong> cuentas que crear</li>
+  <li><strong>0</strong> anuncios y rastreadores</li>
+  <li><strong>100&nbsp;%</strong> de tus datos en tu teléfono</li>
+  <li><strong>FDA</strong> y guías clínicas como fuente</li>
+</ul>
+
+<section id="funciones" class="seccion">
+  <header class="cabecera">
+    <p class="ojo">Funciones</p>
+    <h2>Todo tu tratamiento, en un solo lugar.</h2>
+    <p>Pensada para el día a día: lo importante a un toque y nada que te distraiga.</p>
+  </header>
+  <article class="funcion">
+  <div class="funcion-texto">
+    <p class="numero">01</p>
+    <h3>Anota cada aplicación en segundos</h3>
+    <p>La dosis que te indicó tu médico, el sitio, el dolor y si hubo reacción en la zona. Umavi te sugiere el sitio que lleva más tiempo sin usarse.</p>
+    <ul class="puntos"><li>Mapa de 8 sitios con sus días de descanso</li><li>Recordatorio a tu hora y la víspera, sin nombrar el medicamento</li><li>«Ya me la apliqué» desde la notificación</li></ul>
+  </div>
+  <figure class="telefono "><img src="img/06-registrar.webp" width="540" height="1158" alt="Registro de una aplicación con fecha, dosis, mapa de sitios y escala de dolor" loading="lazy" decoding="async"></figure>
+</article>
+  <article class="funcion">
+  <div class="funcion-texto">
+    <p class="numero">02</p>
+    <h3>Tu peso, tu cuerpo y tu semana</h3>
+    <p>Gráfica con tu meta, cintura, IMC y relación cintura/talla, en kg y cm o en lb, pies y pulgadas. Cada domingo, un resumen de tu semana.</p>
+    <ul class="puntos"><li>Fotos de progreso que nunca salen del teléfono</li><li>Proteína, fibra y agua del día</li><li>Racha y logros que premian anotar, nunca un número en la balanza</li></ul>
+  </div>
+  <figure class="telefono "><img src="img/03-peso.webp" width="540" height="1158" alt="Pantalla Peso con inicio, actual, cambio, meta y gráfica de las últimas 4 semanas" loading="lazy" decoding="async"></figure>
+</article>
+  <article class="funcion">
+  <div class="funcion-texto">
+    <p class="numero">03</p>
+    <h3>Conoce tu medicamento</h3>
+    <p>Cómo actúa, su vida media, cómo conservarlo, cómo se ve bien el líquido, los pasos para aplicarlo y cómo desechar las agujas. Cada dato con su fuente oficial.</p>
+    <ul class="puntos"><li>Fichas de la FDA y guías clínicas, citadas</li><li>Días fuera de la nevera según la etiqueta</li><li>Aviso si dos GLP-1 coinciden en tu cuerpo</li></ul>
+  </div>
+  <figure class="telefono "><img src="img/07-medicamento.webp" width="540" height="1158" alt="Ficha de semaglutida con frecuencia, vida media, días fuera de la nevera y cómo actúa" loading="lazy" decoding="async"></figure>
+</article>
+  <article class="funcion">
+  <div class="funcion-texto">
+    <p class="numero">04</p>
+    <h3>Señales de alarma, a un toque</h3>
+    <p>Si algo no está bien, Umavi te dice qué señales no pueden esperar y te conecta con el número de emergencias de tu país.</p>
+    <ul class="puntos"><li>Síntomas comunes con su intensidad</li><li>Consejo del día con su fuente</li><li>Reporte en PDF para llevar a tu médico</li></ul>
+  </div>
+  <figure class="telefono "><img src="img/04-sintomas.webp" width="540" height="1158" alt="Pantalla de síntomas con el botón rojo de señales de alarma y la lista de molestias" loading="lazy" decoding="async"></figure>
+</article>
+</section>
+
+<section class="seccion mas">
+  <header class="cabecera">
+    <p class="ojo">Y además</p>
+    <h2>Los detalles que hacen la diferencia.</h2>
+  </header>
+  <ul class="rejilla">
+    <li><h3>Calendario</h3><p>Cada aplicación del mes, la próxima y cómo vas.</p></li>
+    <li><h3>Plumas y viales</h3><p>Días desde que los abriste y aviso antes de que se acaben.</p></li>
+    <li><h3>Calculadora de vial</h3><p>Tu dosis en unidades U-100, con la cuenta a la vista. En Android.</p></li>
+    <li><h3>Cómo vas hoy</h3><p>Apetito, energía y sueño de un toque, para ver tus patrones.</p></li>
+    <li><h3>Tus datos son tuyos</h3><p>Exporta todo o bórralo todo cuando quieras.</p></li>
+    <li><h3>Letra grande y lector de pantalla</h3><p>Probada con la letra al doble de tamaño.</p></li>
+  </ul>
+</section>
+
+<section id="privacidad" class="seccion privacidad">
+  <div class="privacidad-texto">
+    <p class="ojo">Privacidad</p>
+    <h2>Tu información de salud no sale de tu teléfono.</h2>
+    <p>Umavi no tiene servidores ni cuentas. No vemos lo que anotas, no lo vendemos y no lo usamos para publicidad. Tú decides si compartes tu reporte con tu médico.</p>
+    <a class="enlace-flecha" href="privacidad/">Lee la política de privacidad <span aria-hidden="true">→</span></a>
+  </div>
+  <ul class="garantias">
+    <li><span aria-hidden="true">✓</span>Sin cuenta ni registro con correo</li>
+    <li><span aria-hidden="true">✓</span>Sin anuncios ni herramientas de rastreo</li>
+    <li><span aria-hidden="true">✓</span>Avisos que no muestran tu medicamento</li>
+    <li><span aria-hidden="true">✓</span>Borra todo desde la app, cuando quieras</li>
+  </ul>
+</section>
+
+<section class="seccion">
+  <header class="cabecera">
+    <p class="ojo">Con los pies en la tierra</p>
+    <h2>Lo que Umavi no hace.</h2>
+    <p>Umavi acompaña el tratamiento que te indicó tu médico. No lo reemplaza.</p>
+  </header>
+  <ul class="rejilla no-hace">
+    <li><h3>No receta ni ajusta dosis</h3><p>La dosis la escribes tú, tal como te la indicó tu médico.</p></li>
+    <li><h3>No es un dispositivo médico</h3><p>No diagnostica ni indica tratamientos.</p></li>
+    <li><h3>No vende medicamentos</h3><p>Ni recomienda proveedores ni enlaza tiendas.</p></li>
+    <li><h3>No atiende emergencias</h3><p>Si algo es grave, llama al número de emergencias de tu país.</p></li>
+  </ul>
+</section>
+
+<section id="planes" class="seccion">
+  <header class="cabecera">
+    <p class="ojo">Planes</p>
+    <h2>Gratis para lo esencial. Premium para ver más.</h2>
+    <p>La seguridad, tu reporte y tus datos nunca se cobran.</p>
+  </header>
+  <div class="planes">
+    <article class="plan">
+      <h3>Gratis</h3>
+      <ul class="puntos">
+        <li>Registro de aplicaciones y recordatorios</li>
+        <li>Rotación de sitios y reacción en la zona</li>
+        <li>Síntomas y señales de alarma</li>
+        <li>Peso de las últimas 4 semanas</li>
+        <li>Reporte PDF y exportar o borrar tus datos</li>
+      </ul>
+    </article>
+    <article class="plan premium">
+      <p class="etiqueta">Premium</p>
+      <h3>Mensual o anual</h3>
+      <ul class="puntos">
+        <li>Todo lo del plan gratis</li>
+        <li>Todo tu historial de peso</li>
+        <li>Varias plumas y viales a la vez</li>
+        <li>«Tus patrones»: cómo te va según el día del ciclo</li>
+      </ul>
+      <p class="nota-plan">El precio lo ves en la tienda antes de confirmar. Cancelas cuando quieras.</p>
+    </article>
+  </div>
+</section>
+
+<section id="preguntas" class="seccion">
+  <header class="cabecera">
+    <p class="ojo">Preguntas</p>
+    <h2>Lo que más nos preguntan.</h2>
+  </header>
+  <div class="faq">
+    <details><summary>¿Umavi me dice qué dosis usar?</summary><p>No. Umavi no recomienda, calcula ni ajusta dosis. Escribes la que te indicó tu médico y Umavi te ayuda a llevar el registro.</p></details>
+    <details><summary>¿Dónde se guardan mis datos?</summary><p>Solo en tu teléfono. No hay cuenta ni servidores. Si borras la app o tus datos desde Más, se eliminan.</p></details>
+    <details><summary>¿Qué medicamentos puedo registrar?</summary><p>Semaglutida, tirzepatida, liraglutida, dulaglutida y exenatida, en pluma o vial, con la dosis y la frecuencia que te indicó tu médico.</p></details>
+    <details><summary>¿Puedo llevarle mis registros a mi médico?</summary><p>Sí. Umavi arma un reporte en PDF con tus aplicaciones, peso, síntomas y medidas de los últimos 90 días, y tú eliges con quién compartirlo.</p></details>
+    <details><summary>¿En qué países estará disponible?</summary><p>La app está en español y la publicaremos en todos los países donde lo permitan Google Play y la App Store. El botón de urgencias marca el número de emergencias de tu país.</p></details>
+    <details><summary>¿Cómo cancelo Premium?</summary><p>Desde la configuración de suscripciones de Google Play o de la App Store. Conservas Premium hasta que termine el periodo pagado.</p></details>
+  </div>
+</section>
+
+<section id="descargar" class="cta">
+  <div class="anillo pequeno" aria-hidden="true"></div>
+  <h2>Empieza hoy. Tu próxima aplicación te espera.</h2>
+  <p>Muy pronto en Android y iPhone.</p>
+  <div class="tiendas"><a class="tienda pronto" href="#descargar" aria-label="Muy pronto en Google Play"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4.2 2.6c-.3.3-.4.7-.4 1.2v16.4c0 .5.1.9.4 1.2l9.1-9.4-9.1-9.4zm10.3 10.6 2.6 2.7-11 6.3 8.4-9zm0-2.4L6.1 1.8l11 6.3-2.6 2.7zm3.9-1.9 3 1.7c.9.5.9 1.3 0 1.8l-3 1.7-2.8-2.6 2.8-2.6z"/></svg><span><small>Muy pronto en</small>Google Play</span></a><a class="tienda pronto" href="#descargar" aria-label="Muy pronto en App Store"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M16.4 12.6c0-2.4 2-3.6 2.1-3.7-1.1-1.7-2.9-1.9-3.5-1.9-1.5-.2-2.9.9-3.7.9-.8 0-1.9-.9-3.2-.8-1.6 0-3.1 1-4 2.4-1.7 3-.4 7.3 1.2 9.7.8 1.2 1.8 2.5 3 2.4 1.2 0 1.7-.8 3.2-.8s1.9.8 3.2.8c1.3 0 2.2-1.2 3-2.4.9-1.4 1.3-2.7 1.3-2.8-.1 0-2.6-1-2.6-3.8zM14 5.4c.7-.8 1.1-1.9 1-3-1 0-2.1.7-2.8 1.5-.6.7-1.2 1.8-1 2.9 1.1.1 2.1-.6 2.8-1.4z"/></svg><span><small>Muy pronto en</small>App Store</span></a></div>
 </section>
 
 </main>
